@@ -1,0 +1,4 @@
+repository "Alchemy Game@NairbHaon@cloud"
+  path "/"
+    br "/main"
+    co "/main"

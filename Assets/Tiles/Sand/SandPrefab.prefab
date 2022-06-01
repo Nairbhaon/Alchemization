@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5160983341048195889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7276608137853938636}
+  - component: {fileID: 2140108063058662833}
+  - component: {fileID: -2902668350270321218}
+  - component: {fileID: -5673625630191449208}
+  - component: {fileID: 6220841303898950825}
+  m_Layer: 0
+  m_Name: SandPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7276608137853938636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160983341048195889}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140108063058662833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160983341048195889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec57081a87c6094dbd5f39615c5769e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2902668350270321218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160983341048195889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb76c23384a9b14789b7e1cf78858a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileType: {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  valuesToTransfer:
+  - 1
+  moveable: 1
+  density: 10
+  temp: 20
+  transferRate: 0.5
+--- !u!114 &-5673625630191449208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160983341048195889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cc34aad7e2d454cb63b8f83ef7d154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outcomes:
+  - {fileID: 11400000, guid: 265ea379a31cb144fb81d561dd0e2254, type: 2}
+  conditions: []
+  tempReq: 1
+  tempMin: 1000
+  tempMax: 20000
+  valueReq: 0
+  valueIndex: 0
+  valueMin: 0
+  valueMax: 0
+--- !u!114 &6220841303898950825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160983341048195889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191bb90a9519b194db5a84a68d26a46f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outcome: {fileID: 11400000, guid: 87707afffe5cb7e4696909e09e770958, type: 2}
+  conditions:
+  - {fileID: 11400000, guid: 01658910d91456d46b6232edd53f1c24, type: 2}
+  tempReq: 0
+  tempMin: 0
+  tempMax: 0

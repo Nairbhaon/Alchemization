@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4294317189548181029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2356962167243167327}
+  - component: {fileID: 5373457919404367697}
+  - component: {fileID: -7105332060394614932}
+  - component: {fileID: 40968780417807524}
+  - component: {fileID: 5389680568206035728}
+  - component: {fileID: -2501149119266972467}
+  m_Layer: 0
+  m_Name: StonePrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2356962167243167327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5373457919404367697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec57081a87c6094dbd5f39615c5769e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7105332060394614932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcb76c23384a9b14789b7e1cf78858a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileType: {fileID: 11400000, guid: dc6a69bddeabba34f934e80abdc268b5, type: 2}
+  valuesToTransfer: []
+  moveable: 1
+  density: 20
+  temp: 20
+  transferRate: 0.5
+--- !u!114 &40968780417807524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cc34aad7e2d454cb63b8f83ef7d154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outcomes:
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  conditions:
+  - {fileID: 11400000, guid: 01658910d91456d46b6232edd53f1c24, type: 2}
+  tempReq: 0
+  tempMin: 0
+  tempMax: 0
+  valueReq: 0
+  valueIndex: 0
+  valueMin: 0
+  valueMax: 0
+--- !u!114 &5389680568206035728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cc34aad7e2d454cb63b8f83ef7d154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outcomes:
+  - {fileID: 11400000, guid: 22bd88ffd9140c64f8908d4a830a5e63, type: 2}
+  conditions: []
+  tempReq: 1
+  tempMin: 1000
+  tempMax: 10000
+  valueReq: 0
+  valueIndex: 0
+  valueMin: 0
+  valueMax: 0
+--- !u!114 &-2501149119266972467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4294317189548181029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3cc34aad7e2d454cb63b8f83ef7d154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outcomes:
+  - {fileID: 11400000, guid: a70ce1f551a6cf748b62de57c13f70c1, type: 2}
+  conditions:
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  - {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
+  tempReq: 0
+  tempMin: 0
+  tempMax: 0
+  valueReq: 0
+  valueIndex: 0
+  valueMin: 0
+  valueMax: 0
