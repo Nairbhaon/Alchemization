@@ -1488,6 +1488,8 @@ Tilemap:
   m_TileObjectToInstantiateArray:
   - m_RefCount: 56
     m_Data: {fileID: 3275264045472631616, guid: 84e7d3e3e1816704d90886ec15619eb2, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -18, y: -10, z: 0}
