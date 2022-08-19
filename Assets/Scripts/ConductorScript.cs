@@ -24,9 +24,12 @@ public class ConductorScript : MonoBehaviour
     }
     public void sendPower()
     {
-        cooldown = cooldownTime;
-        poweredTime = powerTime;
-        powered = true;
+        if (!powered)
+        {
+            cooldown = cooldownTime;
+            poweredTime = powerTime;
+            powered = true;
+        }
         //Debug.Log("Sent");
     }
     // Update is called once per frame
@@ -38,8 +41,10 @@ public class ConductorScript : MonoBehaviour
         if (powered)
         {
             light2d.intensity = 3;
-            if (powerTime - poweredTime >= conductDelay)
+            if (powerTime - poweredTime >= conductDelay && Random.Range(0f,100f) < conductChance * 100f)
             {
+                cs = null;
+                currentSelect = null;
                 pos.y += 1;
                 currentSelect = map.GetInstantiatedObject(pos);
                 if (currentSelect != null)

@@ -6775,7 +6775,7 @@ MonoBehaviour:
   - displayName: Copper
     color: {r: 1, g: 0.29995996, b: 0, a: 1}
     tile: {fileID: 11400000, guid: b13b9d454cf466f47a5591f5380f0611, type: 2}
-    startingAmount: 0
+    startingAmount: 100
   - displayName: Glass
     color: {r: 1, g: 0.86274517, b: 0.9568628, a: 1}
     tile: {fileID: 11400000, guid: a95d7dad4d59aa742942894a06bdec18, type: 2}
