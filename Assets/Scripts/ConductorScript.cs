@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using UnityEngine.Rendering.Universal;
 
 public class ConductorScript : MonoBehaviour
 {
@@ -13,11 +14,13 @@ public class ConductorScript : MonoBehaviour
     public bool powered;
     public int poweredTime;
     public int cooldown = 0;
+    Light2D light2d;
     Tilemap map;
     // Start is called before the first frame update
     void Start()
     {
         map = transform.parent.gameObject.GetComponent<Tilemap>();
+        light2d = GetComponent<Light2D>();
     }
     public void sendPower()
     {
@@ -34,7 +37,8 @@ public class ConductorScript : MonoBehaviour
         ConductorScript cs;
         if (powered)
         {
-            if (powerTime - poweredTime == conductDelay)
+            light2d.intensity = 3;
+            if (powerTime - poweredTime >= conductDelay)
             {
                 pos.y += 1;
                 currentSelect = map.GetInstantiatedObject(pos);
@@ -151,10 +155,14 @@ public class ConductorScript : MonoBehaviour
             }
             
             poweredTime -= 1;
-            if (poweredTime <= 0)
+            if (poweredTime <= 0 && powerTime != 0)
             {
                 powered = false;
             }
+        }
+        else
+        {
+            light2d.intensity = 0;
         }
         cooldown -= 1;
     }

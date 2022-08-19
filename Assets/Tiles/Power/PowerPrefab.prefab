@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5400031454333701645
+--- !u!1 &7420011763850712004
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2516883703573461097}
-  - component: {fileID: 996013793856607485}
-  - component: {fileID: -1533762136147676251}
-  - component: {fileID: -1050807601324206263}
-  - component: {fileID: 3567894746312282851}
+  - component: {fileID: 2975939344523901529}
+  - component: {fileID: 4261271286796341180}
+  - component: {fileID: 6694714021281070583}
+  - component: {fileID: 306661254357053136}
   m_Layer: 0
-  m_Name: CopperPrefab
+  m_Name: PowerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2516883703573461097
+--- !u!4 &2975939344523901529
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400031454333701645}
+  m_GameObject: {fileID: 7420011763850712004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -35,53 +34,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &996013793856607485
+--- !u!114 &4261271286796341180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400031454333701645}
+  m_GameObject: {fileID: 7420011763850712004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bcb76c23384a9b14789b7e1cf78858a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileType: {fileID: 11400000, guid: b13b9d454cf466f47a5591f5380f0611, type: 2}
+  tileType: {fileID: 11400000, guid: f208c708fbdc27641b9183666f2d7114, type: 2}
   valuesToTransfer: []
   moveable: 0
-  density: 30
+  density: 1
   temp: 20
-  transferRate: 0.75
---- !u!114 &-1533762136147676251
+  transferRate: 0.5
+--- !u!114 &6694714021281070583
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400031454333701645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3cc34aad7e2d454cb63b8f83ef7d154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outcomes:
-  - {fileID: 11400000, guid: 9b209c68153553543a8717b2ad27bb1a, type: 2}
-  conditions: []
-  tempReq: 1
-  tempMin: 1100
-  tempMax: 10000
-  valueReq: 0
-  valueIndex: 0
-  valueMin: 0
-  valueMax: 0
---- !u!114 &-1050807601324206263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400031454333701645}
+  m_GameObject: {fileID: 7420011763850712004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e4b77d27dc022f74b89061973ccb1dcc, type: 3}
@@ -89,18 +66,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conductDelay: 1
   conductChance: 1
-  cooldownTime: 8
-  powerTime: 4
-  powered: 0
+  cooldownTime: 0
+  powerTime: 0
+  powered: 1
   poweredTime: 0
   cooldown: 0
---- !u!114 &3567894746312282851
+--- !u!114 &306661254357053136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5400031454333701645}
+  m_GameObject: {fileID: 7420011763850712004}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
@@ -111,7 +88,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 0.9060749, b: 0, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
   m_ApplyToSortingLayers: 00000000

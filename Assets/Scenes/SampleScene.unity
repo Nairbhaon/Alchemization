@@ -6744,6 +6744,10 @@ MonoBehaviour:
     color: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
     tile: {fileID: 11400000, guid: d32b9167389f0a249b27eee6f708803a, type: 2}
     startingAmount: 1e+9
+  - displayName: Power Source
+    color: {r: 1, g: 0.8235295, b: 0.15686275, a: 1}
+    tile: {fileID: 11400000, guid: f208c708fbdc27641b9183666f2d7114, type: 2}
+    startingAmount: 1e+9
   - displayName: Sand
     color: {r: 1, g: 0.7176471, b: 0.3019608, a: 1}
     tile: {fileID: 11400000, guid: 7d6be408adfc8dd4db54ee60fc53949f, type: 2}
